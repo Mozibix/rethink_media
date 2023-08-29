@@ -1,0 +1,12 @@
+/* --------------------HEADER SECTION-------------------- */
+.header {
+  &_inner {
+    img {
+      width: 45%;
+
+      @media screen and (min-width: 400px) {
+        width: fit-content;
+      }
+    }
+  }
+}
