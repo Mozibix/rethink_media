@@ -94,10 +94,14 @@ button {
     border-radius: 1rem;
     background: $white;
     box-shadow: $box_shadow;
-    width: 22rem;
+    width: 18.5rem;
     height: 24rem;
     flex-shrink: 0;
     margin: 1rem 0;
+
+    @media screen and (min-width: 400px) {
+      width: 22rem;
+    }
 
     &_header {
       display: grid;
@@ -191,15 +195,24 @@ button {
   }
 
   &_business_email {
-    @include flex_center();
-    gap: 1rem;
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+    @media screen and (min-width: 576px) {
+      gap: 1rem;
+      @include flex_center();
+    }
     button {
-      width: 18rem;
+      width: 16rem;
       height: 3rem;
       border: 1px solid $btn_border_light;
       color: $btn_text_light;
       background: $white;
       text-transform: capitalize;
+
+      @media screen and (min-width: 768px) {
+        width: 18rem;
+      }
     }
   }
 
@@ -207,9 +220,13 @@ button {
     button {
       background: $secondary;
       color: $white;
-      width: 15rem;
+      width: 13rem;
       height: 3rem;
       margin: 2rem 0;
+
+      @media screen and (min-width: 768px) {
+        width: 15rem;
+      }
 
       span {
         text-transform: capitalize;
@@ -220,12 +237,18 @@ button {
 
   &_sign_up {
     button {
-      width: 25rem;
+      width: 18.5rem;
       height: 3rem;
-      padding: 0.5rem 1rem;
       border: 1px solid $btn_border_light;
       color: $btn_text_light;
       background: $white;
+      @media screen and (min-width: 400px) {
+        padding: 0.5rem 1rem;
+        width: 22rem;
+      }
+      @media screen and (min-width: 768px) {
+        width: 25rem;
+      }
     }
   }
 }
