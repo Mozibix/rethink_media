@@ -39,7 +39,7 @@ function App() {
         {/* ----------EXPLAINER SECTION---------- */}
 
         <section className="explainer_sec">
-          <div className="explainer_inner container_main">
+          <div className="explainer_inner ">
             <h2 className="secondary_text medium_text">explainer video</h2>
             <div className="explainer_video">
               <YouTubeEmbed videoId={videoId} />
@@ -136,7 +136,7 @@ function App() {
       {/* ----------BUTTONS SECTION---------- */}
 
       <section className="buttons_sec">
-        <div className="buttons_inner container_main">
+        <div className="buttons_inner ">
           <h3 className="secondary_text medium_text">
             Sign Up For The BETA to see more
           </h3>
