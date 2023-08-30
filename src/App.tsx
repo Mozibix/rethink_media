@@ -17,13 +17,17 @@ function App() {
           <div className="hero_inner container_main ">
             <div className="hero_left">
               <div className="hero_left_inner">
-                <h2 className="hero_header ">
-                  Get Advanced AI + Expert Created{" "}
-                  <span className="secondary_text">logo</span>
-                </h2>
-                <p>
-                  Boost your sales 10x faster with content customized by our
-                  unique partnership of human creativity and AI optimization
+                <div className="hero_header ">
+                  <h2>Get Advanced AI + Expert Created </h2>
+                  <p className="secondary_text">logo</p>
+                </div>
+                <p className="hero_left_bottom_text">
+                  Boost your sales{" "}
+                  <span className="fw_900 secondary_text">10x faster </span>
+                  with content customized by our unique partnership of
+                  <span className="fw_900 secondary_text">
+                    human creativity and AI optimization
+                  </span>
                 </p>
               </div>
             </div>
