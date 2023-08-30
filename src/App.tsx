@@ -51,12 +51,12 @@ function App() {
 
             {/* BOX SECTION */}
             <div className="explainer_flexbox">
-              <div className="explainer_flexbox_inner">
+              <div className="explainer_flexbox_inner container_main">
                 {/* BOX */}
                 {BoxData.map((boxInfo, key) => {
                   return (
                     <div key={key} className="explainer_box">
-                      <div className="explainer_box_inner container_main">
+                      <div className="explainer_box_inner">
                         <div className="explainer_box_header">
                           <img
                             src={boxInfo.icon_src}
