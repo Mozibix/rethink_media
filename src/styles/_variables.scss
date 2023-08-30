@@ -59,6 +59,14 @@
 
 .medium_text {
   margin-block: 0 1rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: normal;
+
+  @media screen and (min-width: 576px) {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
 }
 
 .light_text {
