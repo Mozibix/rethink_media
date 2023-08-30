@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import "./colors";
 @import "./variables";
 @import "./header";
@@ -9,6 +10,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 
 html {
@@ -119,7 +125,6 @@ ul {
   }
 
   &_right {
-    // width: 25%;
     &_inner {
       img {
         width: 100%;
@@ -184,20 +189,47 @@ ul {
     border-radius: 1rem;
     background: $white;
     box-shadow: $box_shadow;
-    width: 18.5rem;
-    height: 24rem;
-    flex-shrink: 0;
+    width: 18rem;
+    height: 20rem;
     margin: 1rem 0;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    @include flex_center();
+    align-items: flex-start;
 
-    @media screen and (min-width: 400px) {
-      width: 22rem;
+    &:hover {
+      border: 1px solid $secondary;
+    }
+
+    &_inner {
+      padding: 2rem 1rem;
+      height: 100%;
+    }
+
+    &_header {
+      width: 100%;
+
+      img {
+        width: fit-content;
+        height: 3rem;
+      }
     }
 
     &_header {
       display: grid;
       place-items: center;
       justify-content: center;
-      gap: 1rem;
+      gap: 0.5rem;
+      min-height: 8rem;
+      margin-bottom: 1rem;
+    }
+
+    &_quotes {
+      color: $black;
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: 400;
+      line-height: 1.3rem;
     }
   }
 }
