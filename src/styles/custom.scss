@@ -11,6 +11,8 @@
   box-sizing: border-box;
 }
 
+/* ---------------------------HERO SECTION--------------------------- */
+
 .hero {
   &_sec {
     @include flex_center();
@@ -23,6 +25,76 @@
     gap: 2rem;
     @media screen and (min-width: 768px) {
       @include flex_center();
+    }
+  }
+}
+
+/* ---------------------------EXPLAINER SECTION--------------------------- */
+
+.explainer {
+  &_sec {
+    @include flex_center();
+    text-align: center;
+  }
+
+  &_inner {
+    h2 {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      margin-block: 4rem 7rem;
+    }
+  }
+
+  &_video {
+    width: 100%;
+    max-width: 46rem;
+    height: 16rem;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      height: 25rem;
+    }
+
+    .yt_container {
+      width: 100%;
+      height: 100%;
+      padding: 0.5rem;
+      @include flex_center();
+
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &_flexbox {
+    margin-top: 7rem;
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+
+    &_inner {
+      @include flex_center();
+      flex-wrap: wrap;
+      gap: 2.5rem;
+    }
+  }
+
+  &_box {
+    border-radius: 1rem;
+    background: $white;
+    box-shadow: $box_shadow;
+    width: 22rem;
+    height: 24rem;
+    flex-shrink: 0;
+    margin: 1rem 0;
+
+    &_header {
+      display: grid;
+      place-items: center;
+      justify-content: center;
+      gap: 1rem;
     }
   }
 }
