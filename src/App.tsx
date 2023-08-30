@@ -99,7 +99,7 @@ function App() {
           <h3 className="secondary_text medium_text">
             Activate your business growth with RetinkContent.{" "}
           </h3>
-          <p>
+          <p className="activate_top_quotes">
             Save time and maintain your brand identity within your budget range
             or sign up for affordable plans and still access multiple content
             services like:
@@ -119,9 +119,7 @@ function App() {
                         className="activate_box_img"
                       />
                       <div className="activate_box_header">
-                        <h3 className="light_text">
-                          {activateInfo.header_text}
-                        </h3>
+                        <p className="light_text">{activateInfo.header_text}</p>
                         <div className="short_line"></div>
                       </div>
 
