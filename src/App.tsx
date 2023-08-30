@@ -80,7 +80,7 @@ function App() {
 
       {/* ----------TRANSFORM SECTION---------- */}
       <section className="transform_sec">
-        <div className="transform_inner container_main">
+        <div className="transform_inner">
           <h3 className="secondary_text medium_text">
             Transform your Creation Process
           </h3>
