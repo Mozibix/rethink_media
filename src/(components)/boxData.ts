@@ -1,4 +1,4 @@
-const BoxData = [
+export const BoxData = [
   {
     id: 1,
     icon_src: "/svgs/icon_1.svg",
@@ -36,4 +36,46 @@ const BoxData = [
   },
 ];
 
-export default BoxData;
+export const ActivateBox = [
+  {
+    id: 1,
+    img_src: "/images/image_1.png",
+    header_text: "logos",
+    box_quotes:
+      "Have a unique & creative logo designed to express and represent your brand identity.",
+  },
+  {
+    id: 2,
+    img_src: "/images/image_2.png",
+    header_text: "Blog Writing",
+    box_quotes:
+      "Write SEO enriched blog posts as long or short articles on any topic of your choice .",
+  },
+  {
+    id: 3,
+    img_src: "/images/image_3.png",
+    header_text: "Animated Videos",
+    box_quotes:
+      "Bring animated characters to life to keep your viewers engaged and  entertained.",
+  },
+  {
+    id: 4,
+    img_src: "/images/image_4.png",
+    header_text: "Copywriting",
+    box_quotes:
+      "Introduce your product to potential customers in a clear and creative video.",
+  },
+  {
+    id: 5,
+    img_src: "/images/image_5.png",
+    header_text: "Product Demo",
+    box_quotes:
+      "Have creative and compelling copies written to boost your product, brand, service or company.",
+  },
+  {
+    id: 6,
+    img_src: "/images/image_6.png",
+    header_text: "Social Media Ads",
+    box_quotes: "Boost sales and awareness with tailor made ads from experts.",
+  },
+];
