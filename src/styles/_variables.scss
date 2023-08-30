@@ -20,3 +20,18 @@
 .secondary_text {
   color: $secondary;
 }
+
+.medium_text {
+  margin-block: 0 1rem;
+}
+
+.light_text {
+  color: $light_text;
+}
+
+/* SHORT LINE */
+.short_line {
+  width: 5rem;
+  height: 0.1rem;
+  background: linear-gradient(90deg, #754de8 0%, #754de8 100%);
+}
