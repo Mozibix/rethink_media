@@ -274,8 +274,17 @@ ul {
   &_sec {
     @include flex_center();
     text-align: center;
+    color: $dark_text;
   }
 
+  &_top_quotes {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    width: 100%;
+    max-width: 45rem;
+    margin: 0 auto;
+  }
   &_flexbox {
     &_inner {
       display: grid;
@@ -294,21 +303,23 @@ ul {
       @media screen and (min-width: 768px) {
         grid-template-columns: auto auto auto;
       }
+      @media screen and (min-width: 992px) {
+        gap: 3.5rem;
+      }
     }
   }
 
   &_box {
     width: 15rem;
-    aspect-ratio: 1/1;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 1px 0px;
+    height: 20rem;
     border-radius: 8px;
     text-align: left;
     overflow: hidden;
     transition: all 0.1s ease-in-out;
+    cursor: pointer;
 
     &:hover {
       border: 1px solid $secondary;
-      box-shadow: none;
     }
 
     &_inner {
@@ -316,6 +327,26 @@ ul {
         width: 15rem;
         height: 8rem;
       }
+    }
+
+    &_header,
+    &_quotes {
+      padding: 0.5rem;
+    }
+
+    &_header {
+      font-size: 1.1rem;
+      font-weight: 300;
+      text-transform: capitalize;
+      line-height: 1.9125rem;
+      margin-block: 1rem 0.5rem;
+    }
+
+    &_quotes {
+      color: $black;
+      font-size: 0.9rem;
+      font-weight: 400;
+      line-height: 1.5rem;
     }
   }
 }
