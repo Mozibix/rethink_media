@@ -244,8 +244,27 @@ ul {
   }
 
   &_inner {
+    padding: 1rem 0.5rem;
+    text-shadow: $text_shadow;
+    @media screen and (min-width: 576px) {
+      padding: 1rem;
+    }
+
     h3 {
       margin-block: 0 1rem;
+    }
+
+    p {
+      color: $dark_text;
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: normal;
+      width: 100%;
+
+      @media screen and (min-width: 576px) {
+        line-height: 2rem;
+        max-width: 50rem;
+      }
     }
   }
 }
