@@ -256,7 +256,9 @@ function App() {
               data-aos-delay="100"
               data-aos-duration="1000"
             >
-              <button>button name</button>
+              <button>
+                <span>business name</span>
+              </button>
             </a>
             <a
               href="mailto:i@retink.io"
@@ -265,7 +267,9 @@ function App() {
               data-aos-delay="150"
               data-aos-duration="1000"
             >
-              <button>email</button>
+              <button>
+                <span>email</span>
+              </button>
             </a>
           </div>
 
@@ -276,15 +280,17 @@ function App() {
             data-aos-duration="1000"
           >
             <button onClick={() => setClicked(!clicked)}>
-              {!clicked ? (
-                <div>
-                  <span>n</span>otify me
-                </div>
-              ) : (
-                <div>
-                  <span>s</span>uccessful
-                </div>
-              )}
+              <p>
+                {!clicked ? (
+                  <div>
+                    <span>n</span>otify me
+                  </div>
+                ) : (
+                  <div>
+                    <span>s</span>uccessful
+                  </div>
+                )}
+              </p>
             </button>
           </div>
 
@@ -296,7 +302,9 @@ function App() {
               data-aos-delay="250"
               data-aos-duration="1000"
             >
-              <button>Sign up as a freelance partner</button>
+              <button>
+                <span>Sign up as a freelance partner</span>
+              </button>
             </a>
           </div>
         </div>
