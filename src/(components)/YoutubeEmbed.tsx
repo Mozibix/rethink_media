@@ -6,7 +6,12 @@ interface YouTubeEmbedProps {
 
 const YouTubeEmbed: React.FC<YouTubeEmbedProps> = ({ videoId }) => {
   return (
-    <div className="yt_container">
+    <div
+      className="yt_container"
+      data-aos="flip-left"
+      data-aos-delay="100"
+      data-aos-duration="1000"
+    >
       <iframe
         width={100}
         height={100}
