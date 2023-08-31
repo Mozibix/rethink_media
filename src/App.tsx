@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Footer from "./(components)/Footer";
 import Header from "./(components)/Header";
 import YouTubeEmbed from "./(components)/YoutubeEmbed";
@@ -5,6 +6,7 @@ import { ActivateBox, BoxData } from "./(components)/boxData";
 import banner from "/svgs/avatar_img.svg";
 
 function App() {
+  const [clicked, setClicked] = useState(false);
   const videoId = "ZvBenCpG3dY";
   return (
     <>
@@ -24,7 +26,7 @@ function App() {
                 <p className="hero_left_bottom_text">
                   Boost your sales{" "}
                   <span className="fw_900 secondary_text">10x faster </span>
-                  with content customized by our unique partnership of
+                  with content customized by our unique partnership of &nbsp;
                   <span className="fw_900 secondary_text">
                     human creativity and AI optimization
                   </span>
@@ -144,18 +146,32 @@ function App() {
           </h3>
 
           <div className="buttons_business_email">
-            <button>button name</button>
-            <button>email</button>
+            <a href="mailto:i@retink.io" target="_blank">
+              <button>button name</button>
+            </a>
+            <a href="mailto:i@retink.io" target="_blank">
+              <button>email</button>
+            </a>
           </div>
 
           <div className="buttons_notify">
-            <button>
-              <span>n</span>otify me
+            <button onClick={() => setClicked(!clicked)}>
+              {!clicked ? (
+                <div>
+                  <span>n</span>otify me
+                </div>
+              ) : (
+                <div>
+                  <span>s</span>uccessful
+                </div>
+              )}
             </button>
           </div>
 
           <div className="buttons_sign_up">
-            <button>Sign up as a freelance partner</button>
+            <a href="https://rethinkmedia.org" target="_blank">
+              <button>Sign up as a freelance partner</button>
+            </a>
           </div>
         </div>
       </section>
