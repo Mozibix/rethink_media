@@ -24,6 +24,7 @@ html {
 button {
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 ul {
@@ -107,7 +108,7 @@ ul {
       @media screen and (min-width: 1200px) {
         font-size: 3rem;
         line-height: 4rem;
-        max-width: 30rem;
+        max-width: 28rem;
       }
     }
 
@@ -363,6 +364,9 @@ ul {
     button {
       font-size: 1.2rem;
       border-radius: 1rem;
+      font-weight: 500;
+      line-height: normal;
+      transition: all 0.3s ease-in-out;
     }
   }
 
@@ -385,6 +389,12 @@ ul {
       @media screen and (min-width: 768px) {
         width: 18rem;
       }
+
+      &:hover {
+        color: $white;
+        background: $secondary;
+        font-weight: 600;
+      }
     }
   }
 
@@ -398,6 +408,13 @@ ul {
 
       @media screen and (min-width: 768px) {
         width: 15rem;
+      }
+
+      &:hover {
+        font-weight: 600;
+        border: 1px solid $btn_border_light;
+        color: $secondary;
+        background: $white;
       }
 
       span {
@@ -420,6 +437,12 @@ ul {
       }
       @media screen and (min-width: 768px) {
         width: 25rem;
+      }
+
+      &:hover {
+        color: $white;
+        font-weight: 600;
+        background: $secondary;
       }
     }
   }
