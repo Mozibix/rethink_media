@@ -147,7 +147,30 @@ ul {
     &_inner {
       img {
         width: 100%;
+        animation: animateHero 6s ease-in-out infinite;
+        @media screen and (min-width: 768px) {
+          animation: animateHeroDesktop 6s ease-in-out infinite;
+        }
       }
+    }
+  }
+
+  @keyframes animateHero {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(18px);
+    }
+  }
+  @keyframes animateHeroDesktop {
+    0%,
+    100% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(22px);
     }
   }
 }
