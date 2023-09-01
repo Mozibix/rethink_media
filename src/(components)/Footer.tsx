@@ -94,7 +94,7 @@ const Footer = () => {
         </div>
 
         <div className="footer_bottom">
-          <p> Copyright &copy; 2021 Rethink</p>
+          <p> Copyright &copy; 2021 Retink</p>
 
           <ul>
             <li>privacy policy</li>
